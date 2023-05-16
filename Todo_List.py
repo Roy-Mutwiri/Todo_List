@@ -23,4 +23,6 @@ noteImage = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-do
 Label(root, image=noteImage, bg="#32405b").place(x=30, y=25)
 
 heading = Label(root, text="All Task", font="arial 20 bold", fg="white", bg="#32405b")
+heading.place(x=130, y=20)
+
 root.mainloop()
