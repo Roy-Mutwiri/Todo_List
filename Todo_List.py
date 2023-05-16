@@ -16,5 +16,10 @@ root.iconphoto(False, Image_Icon)
 TopImage = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/topbar.png")
 Label(root, image=TopImage).pack()
 
+dockImage = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/dock.png")
+Label(root, image=dockImage, bg="#32405b").place(x=30, y=25)
+
+noteImage = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
+Label(root, image=noteImage, bg="#32405b").place(x=30, y=25)
 
 root.mainloop()
