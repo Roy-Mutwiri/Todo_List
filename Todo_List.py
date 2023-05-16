@@ -25,4 +25,14 @@ Label(root, image=noteImage, bg="#32405b").place(x=30, y=25)
 heading = Label(root, text="All Task", font="arial 20 bold", fg="white", bg="#32405b")
 heading.place(x=130, y=20)
 
+
+# Main
+
+frame = Frame(root, width=400, height=50, bg="white")
+frame.place(x=0, y=180)
+
+task = StringVar()
+
+
+
 root.mainloop()
