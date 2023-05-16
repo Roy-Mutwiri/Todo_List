@@ -32,6 +32,7 @@ frame = Frame(root, width=400, height=50, bg="white")
 frame.place(x=0, y=180)
 
 task = StringVar()
+task_entry = Entry(frame, width=18, font="arial 20", bd=0)
 
 
 
