@@ -10,6 +10,14 @@ task_list = []
 
 def addTask():
 
+    task = task_entry.get()
+    task_entry.delete(0, END)
+
+    if task:
+        with open("tasklist.txt","a")as taskfile:
+            taskfile.write(f"\n{task}")
+
+
 
 def openTaskFile():
 
