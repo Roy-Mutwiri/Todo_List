@@ -21,6 +21,10 @@ def addTask():
         listbox.insert(END, task)
 
 
+def deleteTask():
+
+
+
 
 def openTaskFile():
 
@@ -88,7 +92,7 @@ openTaskFile()
 
 Delete_icon = PhotoImage(
     file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/delete.png")
-Button(root, image=Delete_icon, bd=0).pack(side=BOTTOM, pady=13)
+Button(root, image=Delete_icon, bd=0, command=deleteTask).pack(side=BOTTOM, pady=13)
 
 
 
