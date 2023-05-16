@@ -43,8 +43,9 @@ button.place(x=300, y=0)
 frame1 = Frame(root, bd=3, width=700, height=280, bg="#32405b")
 frame1.pack(pady=(160, 0))
 
-listbox = Listbox(frame1, font=("arial", 12), width=40, height=16, bg="#32405b")
+listbox = Listbox(frame1, font=("arial", 12), width=40, height=16, bg="#32405b", fg="white", cursor="hand2", selectbackground="#5a95ff")
 listbox.pack(side=LEFT, fill=BOTH, padx=2)
+
 
 
 
