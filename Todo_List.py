@@ -8,13 +8,13 @@ root.resizable(False, False)
 
 task_list = []
 
-def addTask():
 
+def addTask():
     task = task_entry.get()
     task_entry.delete(0, END)
 
     if task:
-        with open("tasklist.txt","a")as taskfile:
+        with open("tasklist.txt", "a") as taskfile:
             taskfile.write(f"\n{task}")
 
         task_list.append(task)
@@ -27,28 +27,27 @@ def deleteTask():
         task_list.remove(task)
         with open("tasklist.txt", "w") as taskfie:
             for task in task_list:
-                taskfie.write(task+"\n")
+                taskfie.write(task + "\n")
 
         listbox.delete(ANCHOR)
 
 
-
 def openTaskFile():
-
     try:
-        global  task_list
+        global task_list
 
         with open("tasklist.txt", "r") as taskfile:
             tasks = taskfile.readlines()
 
         for task in tasks:
-            if task !="\n":
+            if task != "\n":
                 task_list.append(task)
                 listbox.insert(END, task)
 
     except:
-        file = open("tasklist.txt","w")
+        file = open("tasklist.txt", "w")
         file.close()
+
 
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
@@ -93,15 +92,11 @@ scrollbar.pack(side=RIGHT, fill=BOTH)
 listbox.config(yscrollcommand=scrollbar.set)
 scrollbar.config(command=listbox.yview)
 
-
 openTaskFile()
 # Delete
 
 Delete_icon = PhotoImage(
     file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/delete.png")
 Button(root, image=Delete_icon, bd=0, command=deleteTask).pack(side=BOTTOM, pady=13)
-
-
-
 
 root.mainloop()
