@@ -9,8 +9,8 @@ root.resizable(False, False)
 task_list = []
 
 def openTaskFile():
-    with open("tasklist.txt","r") as taskfile:
-        task = taskfile.readlines()
+    with open("tasklist.txt", "r") as taskfile:
+        tasks = taskfile.readlines()
 
     for task in tasks:
         if task !="\n":
