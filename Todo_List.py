@@ -49,6 +49,10 @@ scrollbar = Scrollbar(frame1)
 scrollbar.pack(side=RIGHT, fill=BOTH)
 
 listbox.config(yscrollcommand=scrollbar.set)
+scrollbar.config(command=listbox.yview)
+
+# Delete
+
 
 
 
