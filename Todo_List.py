@@ -33,7 +33,11 @@ frame.place(x=0, y=180)
 
 task = StringVar()
 task_entry = Entry(frame, width=18, font="arial 20", bd=0)
+task_entry.place(x=10, y=7)
+task_entry.focus()
 
+button = Button(frame, text="ADD", font="arial 20 bold", width=6, bg="#5a95ff", fg="white", bd=0)
+button.place(x=300, y=0)
 
 
 root.mainloop()
