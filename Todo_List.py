@@ -53,6 +53,9 @@ scrollbar.config(command=listbox.yview)
 
 # Delete
 
+Delete_icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/delete.png")
+Button(root, image=Delete_icon, bd=0).pack(side=BOTTOM, pady=13)
+
 
 
 
