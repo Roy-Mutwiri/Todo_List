@@ -9,13 +9,21 @@ root.resizable(False, False)
 task_list = []
 
 def openTaskFile():
-    with open("tasklist.txt", "r") as taskfile:
-        tasks = taskfile.readlines()
 
-    for task in tasks:
-        if task !="\n":
-            task_list.append(task)
-            listbox.insert(END, task)
+    try:
+        global  task_list
+
+        with open("tasklist.txt", "r") as taskfile:
+            tasks = taskfile.readlines()
+
+        for task in tasks:
+            if task !="\n":
+                task_list.append(task)
+                listbox.insert(END, task)
+
+    except:
+        file = open("tasklist.txt","w")
+        file.close()
 
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
