@@ -22,7 +22,14 @@ def addTask():
 
 
 def deleteTask():
+    task = str(listbox.get(ANCHOR))
+    if task in task_list:
+        task_list.remove(task)
+        with open("tasklist.txt", "w") as taskfie:
+            for task in task_list:
+                taskfie.write(task+"\n")
 
+        listbox.delete(ANCHOR)
 
 
 
