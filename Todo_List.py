@@ -69,8 +69,8 @@ heading.place(x=130, y=20)
 
 # Coffee Icon
 
-coffee = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/")
-Label(root, image=coffee,bg="#32405b").place(x=35, y=25)
+coffee = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/pic.png")
+Label(root, image=coffee,bg="#32405b").place(x=35, y=35)
 
 # Main
 
