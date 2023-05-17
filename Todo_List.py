@@ -36,6 +36,7 @@ def openTaskFile():
     try:
         global task_list
 
+
         with open("tasklist.txt", "r") as taskfile:
             tasks = taskfile.readlines()
 
