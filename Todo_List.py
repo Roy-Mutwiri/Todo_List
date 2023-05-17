@@ -73,7 +73,7 @@ frame.place(x=0, y=180)
 
 task = StringVar()
 task_entry = Entry(frame, width=28, font="calibri 12", bd=0)
-task_entry.place(x=10, y=7)
+task_entry.place(x=10, y=9)
 task_entry.focus()
 
 button = Button(frame, text="ADD", font="arial 20 bold", width=6, bg="#5a95ff", fg="white", bd=0, command=addTask)
