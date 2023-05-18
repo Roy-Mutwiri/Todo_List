@@ -107,6 +107,7 @@ Button(root, image=Delete_icon, bd=0, command=deleteTask).pack(side=BOTTOM, pady
 
 # Add Exit Button
 
-Ex = Button(root, text="Exit").pack(side=BOTTOM, pady=13)
+Ex = Button(root, text="Exit")
+Ex.place(x=100, y=78)
 
 root.mainloop()
