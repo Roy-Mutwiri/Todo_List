@@ -1,3 +1,4 @@
+import sys
 import tkinter
 from tkinter import *
 
@@ -10,6 +11,8 @@ task_list = []
 # Kill command
 
 def die():
+
+    sys.exit()
 
 
 def addTask():
