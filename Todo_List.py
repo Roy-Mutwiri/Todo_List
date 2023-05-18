@@ -7,6 +7,9 @@ root.geometry("400x650+400+100")
 root.resizable(False, False)
 
 task_list = []
+# Kill command
+
+def die():
 
 
 def addTask():
