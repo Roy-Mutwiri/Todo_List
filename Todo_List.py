@@ -8,10 +8,11 @@ root.geometry("400x650+400+100")
 root.resizable(False, False)
 
 task_list = []
+
+
 # Kill command
 
 def die():
-
     sys.exit()
 
 
@@ -41,7 +42,6 @@ def deleteTask():
 def openTaskFile():
     try:
         global task_list
-
 
         with open("tasklist.txt", "r") as taskfile:
             tasks = taskfile.readlines()
@@ -76,7 +76,7 @@ heading.place(x=130, y=20)
 # Coffee Icon
 
 coffee = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/pic.png")
-Label(root, image=coffee,bg="#32405b").place(x=25, y=79)
+Label(root, image=coffee, bg="#32405b").place(x=25, y=79)
 
 # Main
 
