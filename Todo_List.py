@@ -11,7 +11,6 @@ task_list = []
 
 
 # Kill command
-
 def die():
     sys.exit()
 
