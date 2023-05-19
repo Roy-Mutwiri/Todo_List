@@ -19,7 +19,7 @@ def addTask():
     task = task_entry.get()
     task_entry.delete(0, END)
 
-    global task
+
 
     if task:
         with open("tasklist.txt", "a") as taskfile:
@@ -127,6 +127,9 @@ with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as fil
 last_task = todo_list[-1].strip()
 sentences = last_task.split(".")
 last_sentence = sentences[-1].strip()
+
+for task in todo_list:
+    task_entry.insert(tk.END, task)
 
 
 root.mainloop()
