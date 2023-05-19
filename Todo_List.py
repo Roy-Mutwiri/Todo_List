@@ -127,10 +127,12 @@ with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as fil
 last_task = todo_list[-1].strip()
 sentences = last_task.split(".")
 last_sentence = sentences[-1].strip()
+
 # Insert the todo list into the Text widget
 for task in todo_list:
     listbox.insert(tk.END, task)
 
+# Scroll to the last sentence
 listbox.see(tk.END)
 
 listbox.focus_set()
