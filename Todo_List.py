@@ -57,10 +57,7 @@ def openTaskFile():
         file.close()
 
 
-# Focus Part
 
-with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as file:
-    todo_list = file.readlines()
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
 root.iconphoto(False, Image_Icon)
@@ -120,5 +117,16 @@ Button(root, image=Delete_icon, bd=0, command=deleteTask).pack(side=BOTTOM, pady
 
 Ex = Button(root, text="Exit", activebackground="Red", bg="green", fg="white", command=die)
 Ex.place(x=149, y=79)
+
+# Focus Part
+
+with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as file:
+    todo_list = file.readlines()
+
+# Extract the last sentence from the todo list
+last_task = todo_list[-1].strip()
+sentences = last_task.split(".")
+last_sentence = sentences[-1].strip()
+
 
 root.mainloop()
