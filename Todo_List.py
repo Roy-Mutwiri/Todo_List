@@ -1,6 +1,7 @@
 import sys
 import tkinter as tk
 from tkinter import *
+import os
 
 root = Tk()
 root.title("To-Do_List")
@@ -139,6 +140,10 @@ listbox.focus_set()
 # Adding Date
 
 Date = StringVar()
-
+today = date.today()
+d1 = today.strftime("%d/%m/%Y")
+date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", state="disabled", fg="black")
+date_entry.place(x=550, y=150)
+Date.set(d1)
 # Start the tkinter event loop
 root.mainloop()
