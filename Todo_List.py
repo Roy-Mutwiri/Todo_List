@@ -55,6 +55,11 @@ def openTaskFile():
         file = open("tasklist.txt", "w")
         file.close()
 
+# Focus Part
+
+
+
+
 
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
