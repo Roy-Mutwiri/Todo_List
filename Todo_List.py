@@ -129,7 +129,9 @@ sentences = last_task.split(".")
 last_sentence = sentences[-1].strip()
 
 for task in todo_list:
-    task_entry.insert(tk.END, task)
+    listbox.insert(tk.END, task)
+
+
 
 
 root.mainloop()
