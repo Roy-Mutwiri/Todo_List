@@ -58,7 +58,11 @@ def openTaskFile():
 # Focus Part
 
 with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as file:
+        todo_list = file.readlines()
 
+last_task = todo_list[-1].strip()  # Get the last task and remove any leading/trailing whitespace
+sentences = last_task.split(".")  # Split the last task into sentences
+last_sentence = sentences[-1].strip()  # Get the last sentence and remove any leading/trailing whitespace
 
 
 
