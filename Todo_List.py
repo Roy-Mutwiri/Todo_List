@@ -57,6 +57,8 @@ def openTaskFile():
 
 # Focus Part
 
+with open("tasklist.txt.txt", "r") as file:
+    todo_list = file.readlines()
 
 
 
