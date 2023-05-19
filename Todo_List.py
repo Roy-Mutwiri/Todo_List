@@ -57,7 +57,7 @@ def openTaskFile():
         file.close()
 
 # Focus Part
-''''
+
 with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as file:
         todo_list = file.readlines()
 
@@ -67,7 +67,7 @@ last_sentence = sentences[-1].strip()  # Get the last sentence and remove any le
 
 for task in todo_list:
     print(task)
-'''
+
 
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
