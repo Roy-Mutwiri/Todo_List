@@ -20,7 +20,6 @@ def addTask():
     task = task_entry.get()
     task_entry.delete(0, END)
 
-
     if task:
         with open("tasklist.txt", "a") as taskfile:
             taskfile.write(f"\n{task}")
@@ -44,7 +43,6 @@ def openTaskFile():
     try:
         global task_list
 
-
         with open("tasklist.txt", "r") as taskfile:
             tasks = taskfile.readlines()
 
@@ -57,19 +55,15 @@ def openTaskFile():
         file = open("tasklist.txt", "w")
         file.close()
 
+
 # Focus Part
 
 with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as file:
-        todo_list = file.readlines()
+    todo_list = file.readlines()
 
 last_task = todo_list[-1].strip()  # Get the last task and remove any leading/trailing whitespace
 sentences = last_task.split(".")  # Split the last task into sentences
 last_sentence = sentences[-1].strip()  # Get the last sentence and remove any leading/trailing whitespace
-
-
-
-
-
 
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
