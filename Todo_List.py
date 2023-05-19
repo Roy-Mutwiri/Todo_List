@@ -66,7 +66,11 @@ sentences = last_task.split(".")  # Split the last task into sentences
 last_sentence = sentences[-1].strip()  # Get the last sentence and remove any leading/trailing whitespace
 
 for task in todo_list:
-    print(task)
+    pass
+
+
+task_list.see(tk.END)
+
 
 
 # Icon
