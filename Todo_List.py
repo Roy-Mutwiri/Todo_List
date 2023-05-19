@@ -138,6 +138,7 @@ listbox.focus_set()
 
 # Adding Date
 
+Date = StringVar()
 
 # Start the tkinter event loop
 root.mainloop()
