@@ -20,6 +20,8 @@ def addTask():
     task = task_entry.get()
     task_entry.delete(0, END)
 
+    global task
+
     if task:
         with open("tasklist.txt", "a") as taskfile:
             taskfile.write(f"\n{task}")
@@ -60,7 +62,7 @@ def openTaskFile():
 
 with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as file:
     todo_list = file.readlines()
-
+print(task)
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
 root.iconphoto(False, Image_Icon)
