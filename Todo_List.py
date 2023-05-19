@@ -138,5 +138,5 @@ listbox.see(tk.END)
 # Set the focus to the Text widget
 listbox.focus_set()
 
-
+# Start the tkinter event loop
 root.mainloop()
