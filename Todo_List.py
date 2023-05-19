@@ -135,6 +135,7 @@ for task in todo_list:
 # Scroll to the last sentence
 listbox.see(tk.END)
 
+# Set the focus to the Text widget
 listbox.focus_set()
 
 
