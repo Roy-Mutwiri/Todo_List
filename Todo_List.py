@@ -61,13 +61,6 @@ def openTaskFile():
 with open("/home/anon/Documents/Python Code/Todo_List/tasklist.txt", "r") as file:
     todo_list = file.readlines()
 
-
-
-
-
-
-
-
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
 root.iconphoto(False, Image_Icon)
