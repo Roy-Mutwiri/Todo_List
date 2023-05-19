@@ -65,6 +65,12 @@ last_task = todo_list[-1].strip()  # Get the last task and remove any leading/tr
 sentences = last_task.split(".")  # Split the last task into sentences
 last_sentence = sentences[-1].strip()  # Get the last sentence and remove any leading/trailing whitespace
 
+
+
+
+
+
+
 # Icon
 Image_Icon = PhotoImage(file="/home/anon/Documents/Python Code/Todo_List/drive-download-20230516T165408Z-001/task.png")
 root.iconphoto(False, Image_Icon)
