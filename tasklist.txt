@@ -2,3 +2,7 @@
 Developed By  Roy
 
 A basic todo list.
+
+Features in it
+
+Keep records.
