@@ -6,3 +6,6 @@ A basic todo list.
 Features in it
 
 Keep records.
+
+Update records
+
