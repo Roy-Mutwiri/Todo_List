@@ -170,6 +170,11 @@ Done = Button(root, text="Done", activebackground="white", bg="purple", fg="whit
 Done.place(x=200, y=79)
 
 # Date func and it takes from the machine
+today = date.today()
+d1 = today.strftime("%d/%m/%Y")
+date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", state="disabled", fg="black")
+date_entry.place(x=550, y=150)
+Date.set(d1)
 
 # Start the tkinter event loop
 root.mainloop()
