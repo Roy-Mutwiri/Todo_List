@@ -175,8 +175,8 @@ Done.place(x=200, y=79)
 Date = StringVar()
 today = date.today()
 d1 = today.strftime("%d/%m/%Y")
-date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", state="disabled", fg="black")
-date_entry.place(x=550, y=150)
+date_entry = Entry(root, textvariable=Date, width=15, font="arial 14 bold", state="disabled", fg="black")
+date_entry.place(x=250, y=150)
 Date.set(d1)
 
 # Start the tkinter event loop
