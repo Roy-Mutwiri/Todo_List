@@ -146,6 +146,17 @@ date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", stat
 date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
+def strike():
+    task = str(listbox.get(ANCHOR))
+    if task in task_list:
+        task_list.remove(task)
+        with open("tasklist.txt", "w") as taskfie:
+            for task in task_list:
+                taskfie.write(task + "\n")
+
+        listbox.delete(ANCHOR)
+
+
 Done = Button(root, text="Done", activebackground="white", bg="purple", fg="white", command=die)
 Done.place(x=200, y=79)
 
