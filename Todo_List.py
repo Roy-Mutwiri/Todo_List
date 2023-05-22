@@ -146,8 +146,12 @@ date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", stat
 date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
+
+
 def strike_through(text):
     return '\u0336'.join(text) + '\u0336'
+
+
 def strike():
     selected_task = str(listbox.get(ANCHOR))
     if selected_task in task_list:
@@ -161,10 +165,8 @@ def strike():
         listbox.insert(task_index, strike_through_task)
 
 
-
 Done = Button(root, text="Done", activebackground="white", bg="purple", fg="white", command=strike)
 Done.place(x=200, y=79)
-
 
 # Start the tkinter event loop
 root.mainloop()
