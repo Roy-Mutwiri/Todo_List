@@ -146,7 +146,7 @@ date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", stat
 date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
-Done = Button(root, text="Done", activebackground="Red", bg="green", fg="white", command=die)
+Done = Button(root, text="Done", activebackground="white", bg="green", fg="white", command=die)
 Done.place(x=200, y=79)
 
 
