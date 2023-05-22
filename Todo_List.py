@@ -146,5 +146,6 @@ date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", stat
 date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
+
 # Start the tkinter event loop
 root.mainloop()
