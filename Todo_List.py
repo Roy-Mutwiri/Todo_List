@@ -136,7 +136,7 @@ listbox.see(tk.END)
 # Set the focus to the Text widget
 listbox.focus_set()
 
-
+'''''
 # Adding Date
 
 Date = StringVar()
@@ -145,5 +145,6 @@ d1 = today.strftime("%d/%m/%Y")
 date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", state="disabled", fg="black")
 date_entry.place(x=550, y=150)
 Date.set(d1)
+'''
 # Start the tkinter event loop
 root.mainloop()
