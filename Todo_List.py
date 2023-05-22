@@ -147,14 +147,17 @@ date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
 def strike():
-    task = str(listbox.get(ANCHOR))
-    if task in task_list:
-        task_list.remove(task)
-        with open("tasklist.txt", "w") as taskfie:
+    selected_task = str(listbox.get(ANCHOR))
+    if selected_task in task_list:
+        task_index = task_list.index(selected_task)
+        strike_through_task = strike_through(selected_task)
+        task_list[task_index] = strike_through_task
+        with open("tasklist.txt", "w") as taskfile:
             for task in task_list:
-                taskfie.write(task + "\n")
-
+                taskfile.write(task + "\n")
         listbox.delete(ANCHOR)
+        listbox.insert(task_index, strike_through_task)
+
 
 
 Done = Button(root, text="Done", activebackground="white", bg="purple", fg="white", command=die)
