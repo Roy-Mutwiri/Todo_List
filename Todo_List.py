@@ -2,6 +2,7 @@ import sys
 import tkinter as tk
 from tkinter import *
 import os
+from  datetime import date
 
 root = Tk()
 root.title("To-Do_List")
@@ -171,6 +172,7 @@ Done = Button(root, text="Done", activebackground="white", bg="purple", fg="whit
 Done.place(x=200, y=79)
 
 # Date func and it takes from the machine
+Date = StringVar()
 today = date.today()
 d1 = today.strftime("%d/%m/%Y")
 date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", state="disabled", fg="black")
