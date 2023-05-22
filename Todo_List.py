@@ -146,9 +146,8 @@ date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", stat
 date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
-# Add Button Strike Through
-strike= Button(frame, text="Done", font="arial 20 bold", width=6, bg="#5a95ff", fg="white", bd=0, command=addTask)
-strike.place(x=360, y=0)
+Done = Button(root, text="Done", activebackground="Red", bg="green", fg="white", command=die)
+Done.place(x=200, y=79)
 
 
 # Start the tkinter event loop
