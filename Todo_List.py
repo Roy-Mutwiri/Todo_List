@@ -147,6 +147,7 @@ date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
 
+
 # Strike through function
 
 def strike_through(text):
@@ -166,12 +167,8 @@ def strike():
         listbox.insert(task_index, strike_through_task)
 
 
-
-
 Done = Button(root, text="Done", activebackground="white", bg="purple", fg="white", command=strike)
 Done.place(x=200, y=79)
-
-
 
 # Date func and it takes from the machine
 today = date.today()
@@ -180,11 +177,6 @@ date_entry = Entry(root, textvariable=Date, width=15, font="arial 10 bold", stat
 date_entry.place(x=550, y=150)
 Date.set(d1)
 
-
-
-
 # Start the tkinter event loop
 
 root.mainloop()
-
-
