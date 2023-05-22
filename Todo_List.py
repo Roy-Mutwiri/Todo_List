@@ -169,5 +169,7 @@ def strike():
 Done = Button(root, text="Done", activebackground="white", bg="purple", fg="white", command=strike)
 Done.place(x=200, y=79)
 
+# Date
+
 # Start the tkinter event loop
 root.mainloop()
