@@ -147,6 +147,7 @@ date_entry.place(x=550, y=150)
 Date.set(d1)
 '''
 
+# Strike through function
 
 def strike_through(text):
     return '\u0336'.join(text) + '\u0336'
