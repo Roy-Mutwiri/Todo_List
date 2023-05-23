@@ -11,6 +11,12 @@ root.resizable(False, False)
 
 task_list = []
 
+def set_mixed_color_bg():
+    red_value = int(red_slider.get())
+    green_value = int(green_slider.get())
+    blue_value = int(blue_slider.get())
+    color_hex = '#{:02x}{:02x}{:02x}'.format(red_value, green_value, blue_value)
+    root.configure(background=color_hex)
 
 # Kill command
 def die():
