@@ -6,7 +6,7 @@ from datetime import date
 
 root = Tk()
 root.title("To-Do_List")
-root.geometry("400x650+400+100")
+root.geometry("400x650+600+100")
 root.resizable(False, False)
 
 task_list = []
