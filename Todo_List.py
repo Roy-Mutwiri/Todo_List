@@ -2,7 +2,7 @@ import sys
 import tkinter as tk
 from tkinter import *
 import os
-from  datetime import date
+from datetime import date
 
 root = Tk()
 root.title("To-Do_List")
