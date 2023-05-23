@@ -11,29 +11,7 @@ root.resizable(False, False)
 
 task_list = []
 
-def set_mixed_color_bg():
-    red_value = int(red_slider.get())
-    green_value = int(green_slider.get())
-    blue_value = int(blue_slider.get())
-    color_hex = '#{:02x}{:02x}{:02x}'.format(red_value, green_value, blue_value)
-    root.configure(background=color_hex)
-red_label = tk.Label(root, text="Red")
-red_label.grid(row=0, column=0)
-red_slider = tk.Scale(root, from_=0, to=255, orient=tk.HORIZONTAL)
-red_slider.grid(row=0, column=1)
 
-green_label = tk.Label(root, text="Green")
-green_label.grid(row=1, column=0)
-green_slider = tk.Scale(root, from_=0, to=255, orient=tk.HORIZONTAL)
-green_slider.grid(row=1, column=1)
-
-blue_label = tk.Label(root, text="Blue")
-blue_label.grid(row=2, column=0)
-blue_slider = tk.Scale(root, from_=0, to=255, orient=tk.HORIZONTAL)
-blue_slider.grid(row=2, column=1)
-
-set_color_button = tk.Button(root, text="Set Color", command=set_mixed_color_bg)
-set_color_button.grid(row=3, columnspan=2)
 # Kill command
 def die():
     sys.exit()
